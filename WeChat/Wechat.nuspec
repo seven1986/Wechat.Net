@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
   <metadata minClientVersion="$version$">
-    <id>$id$</id>
-    <title>WeChat SDK</title>
+    <id>WeChat.Net</id>
+    <title>WeChat.Net</title>
     <version>$version$</version>
     <authors>Seven</authors>
     <licenseUrl>https://github.com/seven1986/WeChat/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/seven1986/WeChat</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/seven1986/WeChat/master/WeChat/WeChat/icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/seven1986/WeChat/master/WeChat/icon.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <developmentDependency>true</developmentDependency>
     <description>$description$</description>
@@ -18,6 +18,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\WeChat.dll" target="lib\WeChat.dll" />
+    <file src="bin\Release\WeChat.Net.dll" target="lib\WeChat.Net.dll" />
   </files>
 </package>

@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Xml.Linq;
 
-namespace WeChat
+namespace WeChat.Net
 {
     public class RedPack: Basic
     {

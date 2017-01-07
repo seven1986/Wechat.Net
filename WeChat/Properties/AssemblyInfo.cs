@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("WeChat SDK")]
+[assembly: AssemblyTitle("WeChat.Net")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WeChat SDK")]
+[assembly: AssemblyProduct("WeChat.Net")]
 [assembly: AssemblyCopyright("Copyright ©  2017 Seven")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

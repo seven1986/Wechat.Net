@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 
-namespace WeChat
+namespace WeChat.Net
 {
     /// <summary>
     /// 用户分组

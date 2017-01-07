@@ -1,4 +1,4 @@
-﻿namespace WeChat.Model
+﻿namespace WeChat.Net.Model
 {
   public class Basic
     {

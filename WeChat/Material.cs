@@ -5,7 +5,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace WeChat
+namespace WeChat.Net
 {
     public class Material : Basic
     {

@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using WeChat.Net.Model;
 
-namespace WeChat
+namespace WeChat.Net
 {
     public class Fans: Basic
     {

@@ -9,7 +9,7 @@ using System.Text;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace WeChat
+namespace WeChat.Net
 {
     public class Basic
     {

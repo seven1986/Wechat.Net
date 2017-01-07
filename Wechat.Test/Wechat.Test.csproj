@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WeChat\WeChat.csproj">
+    <ProjectReference Include="..\WeChat\WeChat.Net.csproj">
       <Project>{0512802d-cc4e-49a3-bdfb-97f109e2f66e}</Project>
-      <Name>WeChat</Name>
+      <Name>WeChat.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

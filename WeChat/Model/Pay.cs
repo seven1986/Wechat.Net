@@ -1,4 +1,4 @@
-﻿namespace WeChat.Model
+﻿namespace WeChat.Net.Model
 {
     /// <summary>
     /// 统一下单返回实体

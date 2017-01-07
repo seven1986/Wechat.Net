@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Dynamic;
 
-namespace WeChat
+namespace WeChat.Net
 {
     public class Messagee : Basic
     {

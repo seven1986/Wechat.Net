@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 
-namespace WeChat
+namespace WeChat.Net
 {
     public class MessageTemplate: Basic
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using WeChat.Model;
+using WeChat.Net.Model;
 
-namespace WeChat
+namespace WeChat.Net
 {
     /// <summary>
     /// 微信支付

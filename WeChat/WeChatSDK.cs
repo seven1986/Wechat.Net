@@ -1,4 +1,4 @@
-﻿namespace WeChat
+﻿namespace WeChat.Net
 {
    public class WeChatSDK
     {
