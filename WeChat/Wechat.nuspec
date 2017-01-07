@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
   <metadata minClientVersion="$version$">
     <id>$id$</id>
-    <title>WEChat SDK</title>
+    <title>WeChat SDK</title>
     <version>$version$</version>
     <authors>Seven</authors>
     <licenseUrl>https://github.com/seven1986/WeChat/blob/master/LICENSE</licenseUrl>
