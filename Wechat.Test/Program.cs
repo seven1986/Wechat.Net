@@ -8,6 +8,7 @@ namespace Wechat.Test
         static void Main(string[] args)
         {
 
+
         }
     }
 }

@@ -30,7 +30,7 @@ if (result.return_code.Equals("SUCCESS") && result.result_code.Equals("SUCCESS")
 
 
 // 【网页、公众号支付 H5Pay】
-// 餐宿：订单号、订单金额、openid、商品名称
+// 参数：订单号、订单金额、openid、商品名称
 var result2=  p.H5Pay("201701071230300002", 1, "10001", "测试商品A");
 if (result2.return_code.Equals("SUCCESS") && result2.result_code.Equals("SUCCESS"))
 {
@@ -39,7 +39,7 @@ if (result2.return_code.Equals("SUCCESS") && result2.result_code.Equals("SUCCESS
 }
 
 // 【APP支付 APPPay】
-// 餐宿：设备号、订单号、订单金额、商品名称
+// 参数：设备号、订单号、订单金额、商品名称
 var result3=  p.APPPay("1234567","201701071230300003", 1, "测试商品A");
 if (result3.return_code.Equals("SUCCESS") && result3.result_code.Equals("SUCCESS"))
 {
