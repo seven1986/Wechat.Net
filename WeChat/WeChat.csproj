@@ -46,12 +46,14 @@
   <ItemGroup>
     <Compile Include="Device.cs" />
     <Compile Include="Fans.cs" />
-    <Compile Include="FansModel.cs" />
+    <Compile Include="Model\Basic.cs" />
+    <Compile Include="Model\FansModel.cs" />
     <Compile Include="Groups.cs" />
     <Compile Include="Material.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="MessageTemplate.cs" />
+    <Compile Include="Model\Pay.cs" />
     <Compile Include="Pay.cs" />
     <Compile Include="POI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

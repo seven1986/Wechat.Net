@@ -6,6 +6,8 @@ using System.Net.Security;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Linq;
+using System.Xml.Linq;
 
 namespace WeChat
 {
@@ -36,6 +38,12 @@ namespace WeChat
         /// 微支付证书路径
         /// </summary>
         public static string mch_certPath { get; set; }
+
+
+        /// <summary>
+        ///  微信支付异步通知回调地址（通知url必须为直接可访问的url，不能携带参数）
+        /// </summary>
+        public static string payment_notice_address { get; set; }
 
         /// <summary>
         /// 会话令牌
@@ -823,6 +831,29 @@ namespace WeChat
             }
             var password = s.ToString();
             return password;
+        }
+
+        protected T Deserialize<T>(string xmlString)
+        {
+            if (!string.IsNullOrEmpty(xmlString))
+            {
+                var ResponseXML = XElement.Load(new StringReader(xmlString));
+
+                var Nodes = ResponseXML.DescendantNodes().OfType<XCData>().ToArray();
+
+                foreach (var node in Nodes)
+                {
+                    node.ReplaceWith(new XText(node));
+                }
+
+                var ResponseJson = JsonConvert.SerializeXNode(ResponseXML, Newtonsoft.Json.Formatting.Indented, true);
+
+                var Result = JsonConvert.DeserializeObject<T>(ResponseJson);
+
+                return Result;
+            }
+
+            return default(T);
         }
     }
 }
