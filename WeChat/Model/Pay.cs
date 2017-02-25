@@ -5,7 +5,6 @@
     /// </summary>
     public class unifiedOrderResponse:Basic
     {
-
         /// <summary>
         /// 设备号 自定义参数，可以为请求支付的终端设备号等
         /// </summary>
@@ -128,5 +127,68 @@
         /// 交易状态描述 对当前查询订单状态的描述和下一步操作的指引
         /// </summary>
         public string trade_state_desc { get; set; }
+    }
+
+    /// <summary>
+    /// 微支付回调通知
+    /// </summary>
+    public class notifyRequest:Basic
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        public string bank_type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string cash_fee { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string device_info { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string fee_type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string is_subscribe { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string openid { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string out_trade_no { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string time_end { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string total_fee { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string trade_type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public string transaction_id { get; set; }
+
+        public string attach { get; set; }
     }
 }
