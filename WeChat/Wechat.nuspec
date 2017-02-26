@@ -5,9 +5,9 @@
     <title>WeChat.Net</title>
     <version>$version$</version>
     <authors>Seven</authors>
-    <licenseUrl>https://github.com/seven1986/WeChat/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/seven1986/WeChat</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/seven1986/WeChat/master/WeChat/icon.png</iconUrl>
+    <licenseUrl>https://github.com/seven1986/WeChat.Net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/seven1986/WeChat.Net</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/seven1986/WeChat.Net/master/WeChat.Net/icon.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <developmentDependency>true</developmentDependency>
     <description>$description$</description>
