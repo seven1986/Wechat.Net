@@ -1,5 +1,9 @@
 # WeChat
 
+Wechat.Net | WeChat.Net.Core
+--------------- | ---------------
+[![NuGet](https://img.shields.io/nuget/v/Wechat.Net.svg)](https://github.com/seven1986/Wechat.Net)|[![NuGet](https://img.shields.io/nuget/v/WeChat.Net.Core.svg)](https://github.com/seven1986/WeChat.Net.Core)
+
 #### 1£¨≥ı ºªØ≈‰÷√œÓ
 
 ```csharp
