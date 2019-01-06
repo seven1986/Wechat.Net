@@ -1,53 +1,53 @@
 # WeChat
 
-Wechat.Net | WeChat.Net.Core
---------------- | ---------------
-[![NuGet](https://img.shields.io/nuget/v/Wechat.Net.svg)](https://github.com/seven1986/Wechat.Net)|[![NuGet](https://img.shields.io/nuget/v/WeChat.Net.Core.svg)](https://github.com/seven1986/WeChat.Net.Core)
+Wechat.Net 
+--------------- 
+[![NuGet](https://img.shields.io/nuget/v/Wechat.Net.svg)](https://github.com/seven1986/Wechat.Net)
 
-#### 1£¬³õÊ¼»¯ÅäÖÃÏî
+#### 1ï¼Œåˆå§‹åŒ–é…ç½®é¡¹
 
 ```csharp
  WeChatSDK.Initialize(
-                "¹«ÖÚÕËºÅÓ¦ÓÃID",
-                "¹«ÖÚÕËºÅÓ¦ÓÃÃÜÔ¿",
-                "Î¢Ö§¸¶ÉÌ»§ºÅ",
-                "Î¢Ö§¸¶µÄkey",
-                @"Î¢Ö§¸¶Ö¤ÊéÂ·¾¶",
-                "Î¢ĞÅÖ§¸¶Òì²½Í¨Öª»Øµ÷µØÖ·");
+                "å…¬ä¼—è´¦å·åº”ç”¨ID",
+                "å…¬ä¼—è´¦å·åº”ç”¨å¯†é’¥",
+                "å¾®æ”¯ä»˜å•†æˆ·å·",
+                "å¾®æ”¯ä»˜çš„key",
+                @"å¾®æ”¯ä»˜è¯ä¹¦è·¯å¾„",
+                "å¾®ä¿¡æ”¯ä»˜å¼‚æ­¥é€šçŸ¥å›è°ƒåœ°å€");
 ```
 
-### 2£¬Î¢ĞÅÖ§¸¶
+### 2ï¼Œå¾®ä¿¡æ”¯ä»˜
 
 ```csharp
 var p = new Pay();
 
-// ¡¾É¨Âë¸¶ NativePay¡¿ 
-// ²ÎÊı£º¶©µ¥ºÅ¡¢½ğ¶î¡¢ÉÌÆ·ID¡¢ÉÌÆ·Ãû³Æ
-var result = p.NativePay("201701071230300001", 1, "10001", "²âÊÔÉÌÆ·A");
+// ã€æ‰«ç ä»˜ NativePayã€‘ 
+// å‚æ•°ï¼šè®¢å•å·ã€é‡‘é¢ã€å•†å“IDã€å•†å“åç§°
+var result = p.NativePay("201701071230300001", 1, "10001", "æµ‹è¯•å•†å“A");
 if (result.return_code.Equals("SUCCESS") && result.result_code.Equals("SUCCESS"))
 {
-    // ¶©µ¥ºÅ
+    // è®¢å•å·
     var prepay_id = result.prepay_id;
-    // ¸¶¿îÁ´½Ó£¬½«Õâ¸öÁ´½ÓµØÖ·Ê¤³¡¶şÎ¬Âë£¬ÓÃÎ¢ĞÅÉ¨ÂëÖ§¸¶
+    // ä»˜æ¬¾é“¾æ¥ï¼Œå°†è¿™ä¸ªé“¾æ¥åœ°å€èƒœåœºäºŒç»´ç ï¼Œç”¨å¾®ä¿¡æ‰«ç æ”¯ä»˜
     var code_url = result.code_url;
 }
 
 
-// ¡¾ÍøÒ³¡¢¹«ÖÚºÅÖ§¸¶ H5Pay¡¿
-// ²ÎÊı£º¶©µ¥ºÅ¡¢¶©µ¥½ğ¶î¡¢openid¡¢ÉÌÆ·Ãû³Æ
-var result2=  p.H5Pay("201701071230300002", 1, "10001", "²âÊÔÉÌÆ·A");
+// ã€ç½‘é¡µã€å…¬ä¼—å·æ”¯ä»˜ H5Payã€‘
+// å‚æ•°ï¼šè®¢å•å·ã€è®¢å•é‡‘é¢ã€openidã€å•†å“åç§°
+var result2=  p.H5Pay("201701071230300002", 1, "10001", "æµ‹è¯•å•†å“A");
 if (result2.return_code.Equals("SUCCESS") && result2.result_code.Equals("SUCCESS"))
 {
-    // ¶©µ¥ºÅ
+    // è®¢å•å·
     var prepay_id = result2.prepay_id;
 }
 
-// ¡¾APPÖ§¸¶ APPPay¡¿
-// ²ÎÊı£ºÉè±¸ºÅ¡¢¶©µ¥ºÅ¡¢¶©µ¥½ğ¶î¡¢ÉÌÆ·Ãû³Æ
-var result3=  p.APPPay("1234567","201701071230300003", 1, "²âÊÔÉÌÆ·A");
+// ã€APPæ”¯ä»˜ APPPayã€‘
+// å‚æ•°ï¼šè®¾å¤‡å·ã€è®¢å•å·ã€è®¢å•é‡‘é¢ã€å•†å“åç§°
+var result3=  p.APPPay("1234567","201701071230300003", 1, "æµ‹è¯•å•†å“A");
 if (result3.return_code.Equals("SUCCESS") && result3.result_code.Equals("SUCCESS"))
 {
-    // ¶©µ¥ºÅ
+    // è®¢å•å·
     var prepay_id = result3.prepay_id;
 }
 ```
